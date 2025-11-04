@@ -35,7 +35,6 @@ function ProudProject() {
                 end: 'bottom top',
                 scrub: 1.5,
                 pin: true,
-                markers: true,
                 pinSpacing: true,
             }
         })
@@ -63,19 +62,19 @@ function ProudProject() {
     }, [])
 
   return (
-    <section id='proud-project' className='w-full h-full flex flex-col justify-center items-center px-10 mb-20'>
+    <section id='proud-project' className='bg-black w-full h-full flex flex-col justify-center items-center px-10 mb-20'>
         <div className='flex flex-col justify-center items-center will-fade pt-20'>
-            <h2 className='text-white text-6xl font-bold'>Proud</h2>
-            <h2 className='text-white text-6xl font-great-vibes'>Project</h2>
+            <h2 className='text-[#D7F3F5] text-6xl font-bold'>Proud</h2>
+            <h2 className='text-[#D7F3F5] text-6xl font-great-vibes'>Project</h2>
         </div>
         <div className='flex flex-col md:flex-row justify-center items-center h-full w-full'>
             <div className='will-fade flex flex-col justify-center items-start gap-6 w-full md:w-auto'>
-                <h3 className='text-white text-2xl font-bold'>Features</h3>
+                <h3 className='text-[#D7F3F5] text-2xl font-bold'>Features</h3>
                 <ul className='flex flex-col gap-2'>
                     {projectFeatures.map((feature, index) => (
                         <li key={index} className='flex flex-row items-center gap-2'>
-                            <BadgeCheck className='text-white w-4 h-4' />
-                            <p className='text-white text-sm'>{feature}</p>
+                            <BadgeCheck className='text-gray-400 w-4 h-4' />
+                            <p className='text-gray-400 text-sm'>{feature}</p>
                         </li>
                     ))}
                 </ul>
@@ -86,20 +85,20 @@ function ProudProject() {
                     className='masked-img size-full object-contain' />
             </div>
             <div className='will-fade flex flex-col justify-start items-start gap-6 ma  x-w-[15%]'>
-                <h3 className='text-white text-2xl font-bold'>Experiences</h3>
+                <h3 className='text-[#D7F3F5] text-2xl font-bold'>Experiences</h3>
                 <ul className='flex flex-col gap-2'>
                     {collaborationFeatures.map((experience, index) => (
                         <li key={index} className='flex flex-row items-center gap-2'>
-                            <BadgeCheck className='text-white w-4 h-4' />
-                            <p className='text-white text-sm'>{experience}</p>
+                            <BadgeCheck className='text-gray-400 w-4 h-4' />
+                            <p className='text-gray-400 text-sm'>{experience}</p>
                         </li>
                     ))}
                 </ul>
             </div>
         </div>
         <div className='hidden-content flex flex-col justify-center items-center gap-2 opacity-0 md:p-20'>
-            <h3 className='text-white text-2xl font-bold'>Teckit</h3>
-            <p className='text-white w-full text-sm sm:max-w-[50%] text-center'>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <h3 className='text-[#D7F3F5] text-2xl font-bold'>Teckit</h3>
+            <p className='text-gray-400 w-full text-sm sm:max-w-[50%] text-center'>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
     </section>
 

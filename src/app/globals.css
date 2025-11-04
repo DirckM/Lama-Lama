@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* ... other :root variables ... */
 }
 
 @theme inline {
@@ -19,12 +20,21 @@
   }
 }
 
+/* 🎯 IMPORTANT FIX: Wrap your default element styles here */
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
 @layer utilities {
   .masked-img {
-      mask-image: url("/images/ticket.png");
-      mask-repeat: no-repeat;
-      mask-position: center;
-      mask-size: 50%;
+    mask-image: url("/images/ticket.png");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 50%;
   }
 }
 
@@ -35,10 +45,4 @@
 
 .font-great-vibes {
   font-family: 'Great Vibes', cursive;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

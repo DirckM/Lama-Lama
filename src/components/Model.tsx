@@ -11,6 +11,7 @@
         const gltf = useGLTF('/fortnite_victory_crown_necklace.glb')
         const meshRef = useRef<THREE.Group>(null)
         const LamaGroupRef = useRef<THREE.Group>(null)
+        const CrownGroupRef = useRef<THREE.Group>(null)
         const { viewport } = useThree()
 
         useFrame(() => {
@@ -25,15 +26,18 @@
             if (LamaGroupRef.current) {
                 gsap.to(LamaGroupRef.current.position, {
                     y: 100, // Move crown down in 3D space
+                    delay: 1,
+                    duration: 2,
                     scrollTrigger: {
                         trigger: '#about',
                         start: 'top bottom',
                         end: 'bottom center',
-                        scrub: 1,
+                        scrub: 1.5,
                         markers: true
                     }
                 })
             }
+
         }, [])
         
     return (
