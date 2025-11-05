@@ -26,9 +26,6 @@ export default function Page() {
         <ProudProject />
       </div>
       <div>
-        <p>salkfjneasrklheklagbie</p>
-      </div>
-      <div id='future-project'>
         <FutureProject />
       </div>
     </main>
