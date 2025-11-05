@@ -26,7 +26,6 @@ function MotivationAndGoals() {
                 start: 'top bottom',
                 end: 'center center',
                 scrub: 1,
-                markers: true
             }
         })
 
@@ -40,7 +39,6 @@ function MotivationAndGoals() {
                 start: 'top bottom',
                 end: 'center center',
                 scrub: 1,
-                markers: true
             }
         })
 
@@ -54,7 +52,6 @@ function MotivationAndGoals() {
                 start: 'top bottom',
                 end: 'center center',
                 scrub: 1,
-                markers: true
             }
         })
 
@@ -67,7 +64,6 @@ function MotivationAndGoals() {
                 start: 'top bottom',
                 end: 'center center',
                 scrub: 1,
-                markers: true
             }
         })
 
@@ -80,7 +76,6 @@ function MotivationAndGoals() {
                 start: 'top bottom',
                 end: 'center center',
                 scrub: 1,
-                markers: true
             }
         })
 
@@ -93,7 +88,6 @@ function MotivationAndGoals() {
                 start: 'top bottom',
                 end: 'center center',
                 scrub: 1,
-                markers: true
             }
         })
     })

@@ -63,7 +63,7 @@ function ProudProject() {
     }, [])
 
   return (
-    <div id='proud-project' className='flex-center flex-col min-h-dvh p-5'>
+    <div id='proud-project' className='flex-center flex-col min-h-dvh'>
         <div className='bg-black w-full h-full py-5 gap-4 md:gap-0 flex flex-col justify-center items-center px-10'>
             <div className='flex flex-col justify-center items-center will-fade'>
                 <h2 className='text-[#D7F3F5] text-6xl font-bold'>Proud</h2>
